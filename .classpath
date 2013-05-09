@@ -26,7 +26,7 @@
 	<classpathentry kind="var" path="MVN_REPO/org/apache/geronimo/specs/geronimo-ejb_3.1_spec/1.0/geronimo-ejb_3.1_spec-1.0.jar"/>
 	<classpathentry kind="var" path="MVN_REPO/org/apache/geronimo/specs/geronimo-jpa_2.0_spec/1.0/geronimo-jpa_2.0_spec-1.0.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4jpa"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/hibernate_storage"/>
 	<classpathentry kind="var" path="MVN_REPO/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/hibernate_db"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

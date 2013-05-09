@@ -7,8 +7,8 @@ import java.util.Properties;
 
 import javax.persistence.EntityManagerFactory;
 
-import org.adligo.hibernate.storage.EntityManagerFactoryBuilder;
-import org.adligo.hibernate.storage.I_HibernateMappingProvider;
+import org.adligo.hibernate.db.EntityManagerFactoryBuilder;
+import org.adligo.hibernate.db.I_HibernateMappingProvider;
 import org.adligo.i.adig.client.GRegistry;
 import org.adligo.i.db.DbCheckedInvokerNames;
 import org.adligo.i.db.DbConnectionProvider;
