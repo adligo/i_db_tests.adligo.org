@@ -1,0 +1,16 @@
+<templates>
+	<template name="createKeyValTable">
+		CREATE TABLE keyVal (
+			key varchar(1) PRIMARY KEY,
+			val varchar(500) NOT NULL
+		)
+	</template>
+	<template name="createValueA">
+		INSERT INTO keyVal (key, val)
+		VALUES ('A','A value')
+	</template>
+	<template name="createValueB">
+		INSERT INTO keyVal (key, val)
+		VALUES ('B','B value')
+	</template>
+</templates>

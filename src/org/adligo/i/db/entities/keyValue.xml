@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm classpath:/org/adligo/i/db/orm_2_0.xsd"
+    version="2.0">
+    <description>Simple ORM</description>
+    <package>org.adligo.i.db.entities</package>
+    <entity class="org.adligo.i.db.entities.KeyValue" name="KeyValue">
+        <table name="KeyVal"/>
+        <attributes>
+            <id name="key">
+                <column name="key" length="1"/>
+            </id>
+            <basic name="value">
+                <column name="val" length="500"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
