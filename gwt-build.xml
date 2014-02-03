@@ -3,5 +3,5 @@
 	<!-- note this file is here so that
 	the models projects can be tested vs a db -->
 	
-	<import file="${user.home}/conf/adligo/gwt-test-build.xml"/>
+	<import file="${user.home}/conf/adligo/builds/gwt-test-build.xml"/>
 </project>
