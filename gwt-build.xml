@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project basedir="." default="gwt_jar_and_test" name="i_db_tests">
-	<!-- note this file is here so that
-	the models projects can be tested vs a db -->
-	
-	<import file="${user.home}/conf/adligo/builds/gwt-test-build.xml"/>
-</project>
