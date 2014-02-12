@@ -9,8 +9,8 @@ import javax.persistence.Query;
 
 import org.adligo.i.db.entities.KeyValue;
 import org.adligo.i.db.entities.MockJpaDb;
-import org.adligo.i.log.client.Log;
-import org.adligo.i.log.client.LogFactory;
+import org.adligo.i.log.shared.Log;
+import org.adligo.i.log.shared.LogFactory;
 import org.adligo.tests.ATest;
 
 /**

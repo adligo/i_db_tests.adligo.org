@@ -15,8 +15,8 @@ import org.adligo.i.db.impl.MockDbCheckedInvokerNames;
 import org.adligo.i.db.impl.SimpleExceptionThrowerKeyValCreator;
 import org.adligo.i.db.impl.SimpleKeyRequest;
 import org.adligo.i.db.impl.SimpleQueryExceptionThrowerCheckedInvoker;
-import org.adligo.i.log.client.Log;
-import org.adligo.i.log.client.LogFactory;
+import org.adligo.i.log.shared.Log;
+import org.adligo.i.log.shared.LogFactory;
 import org.adligo.tests.ATest;
 
 public class DbMethodWrappersTest extends ATest {
