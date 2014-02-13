@@ -5,7 +5,7 @@
     version="2.0">
     <description>Simple ORM</description>
     <package>org.adligo.i.db.entities</package>
-    <entity class="org.adligo.i.db.entities.KeyValue" name="KeyValue">
+    <entity class="org.adligo.i.db_tests.entities.KeyValue" name="KeyValue">
         <table name="KeyVal"/>
         <attributes>
             <id name="key">

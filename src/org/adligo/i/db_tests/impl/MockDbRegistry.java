@@ -1,9 +1,8 @@
-package org.adligo.i.db.impl;
+package org.adligo.i.db_tests.impl;
 
 import javax.persistence.EntityManagerFactory;
 
-import org.adligo.i.adig.client.GRegistry;
-import org.adligo.i.db.EntityManagerFactoryContainer;
+import org.adligo.i.adig.shared.GRegistry;
 import org.adligo.i.db.DbCheckedInvokerNames;
 import org.adligo.i.db.DbConnectionProvider;
 import org.adligo.i.db.DbMethodWrappers;

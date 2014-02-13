@@ -1,20 +1,20 @@
-package org.adligo.i.db;
+package org.adligo.i.db_tests;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.adligo.i.adi.client.InvocationException;
-import org.adligo.i.adig.client.GRegistry;
-import org.adligo.i.adig.client.I_GCheckedInvoker;
-import org.adligo.i.db.entities.KeyValue;
-import org.adligo.i.db.entities.MockJpaDb;
-import org.adligo.i.db.impl.BatchCreateKeyValuesRequest;
-import org.adligo.i.db.impl.CreateKeyValueRequest;
-import org.adligo.i.db.impl.MockDbCheckedInvokerNames;
-import org.adligo.i.db.impl.SimpleExceptionThrowerKeyValCreator;
-import org.adligo.i.db.impl.SimpleKeyRequest;
-import org.adligo.i.db.impl.SimpleQueryExceptionThrowerCheckedInvoker;
+import org.adligo.i.adi.shared.InvocationException;
+import org.adligo.i.adig.shared.GRegistry;
+import org.adligo.i.adig.shared.I_GCheckedInvoker;
+import org.adligo.i.db_tests.entities.KeyValue;
+import org.adligo.i.db_tests.entities.MockJpaDb;
+import org.adligo.i.db_tests.impl.BatchCreateKeyValuesRequest;
+import org.adligo.i.db_tests.impl.CreateKeyValueRequest;
+import org.adligo.i.db_tests.impl.MockDbCheckedInvokerNames;
+import org.adligo.i.db_tests.impl.SimpleExceptionThrowerKeyValCreator;
+import org.adligo.i.db_tests.impl.SimpleKeyRequest;
+import org.adligo.i.db_tests.impl.SimpleQueryExceptionThrowerCheckedInvoker;
 import org.adligo.i.log.shared.Log;
 import org.adligo.i.log.shared.LogFactory;
 import org.adligo.tests.ATest;

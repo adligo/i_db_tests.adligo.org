@@ -1,4 +1,4 @@
-package org.adligo.i.db.impl;
+package org.adligo.i.db_tests.impl;
 
 import org.adligo.i.db.SelectRequest;
 

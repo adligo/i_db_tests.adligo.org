@@ -1,7 +1,7 @@
-package org.adligo.i.db.impl;
+package org.adligo.i.db_tests.impl;
 
 import org.adligo.i.db.ModifyRequest;
-import org.adligo.i.db.entities.KeyValue;
+import org.adligo.i.db_tests.entities.KeyValue;
 
 public class CreateKeyValueRequest extends ModifyRequest {
 	private KeyValue item;

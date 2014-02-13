@@ -1,10 +1,10 @@
-package org.adligo.i.db.impl;
+package org.adligo.i.db_tests.impl;
 
-import org.adligo.i.adi.client.InvocationException;
-import org.adligo.i.adig.client.BaseGInvoker;
-import org.adligo.i.adig.client.I_GCheckedInvoker;
+import org.adligo.i.adi.shared.InvocationException;
+import org.adligo.i.adig.shared.BaseGInvoker;
+import org.adligo.i.adig.shared.I_GCheckedInvoker;
 import org.adligo.i.db.I_ReadWriteConnection;
-import org.adligo.i.db.entities.KeyValue;
+import org.adligo.i.db_tests.entities.KeyValue;
 
 public class SimpleKeyValCreator extends BaseGInvoker implements I_GCheckedInvoker<CreateKeyValueRequest, Boolean> {
 

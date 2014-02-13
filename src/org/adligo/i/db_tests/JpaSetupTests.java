@@ -1,4 +1,4 @@
-package org.adligo.i.db;
+package org.adligo.i.db_tests;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -7,8 +7,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 
-import org.adligo.i.db.entities.KeyValue;
-import org.adligo.i.db.entities.MockJpaDb;
+import org.adligo.i.db_tests.entities.KeyValue;
+import org.adligo.i.db_tests.entities.MockJpaDb;
 import org.adligo.i.log.shared.Log;
 import org.adligo.i.log.shared.LogFactory;
 import org.adligo.tests.ATest;

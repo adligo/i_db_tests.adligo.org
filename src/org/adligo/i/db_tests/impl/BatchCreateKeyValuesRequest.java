@@ -1,9 +1,9 @@
-package org.adligo.i.db.impl;
+package org.adligo.i.db_tests.impl;
 
 import java.util.List;
 
 import org.adligo.i.db.ModifyRequest;
-import org.adligo.i.db.entities.KeyValue;
+import org.adligo.i.db_tests.entities.KeyValue;
 
 public class BatchCreateKeyValuesRequest extends ModifyRequest {
 	private List<KeyValue> items;

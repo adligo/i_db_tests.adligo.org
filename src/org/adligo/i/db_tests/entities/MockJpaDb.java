@@ -1,4 +1,4 @@
-package org.adligo.i.db.entities;
+package org.adligo.i.db_tests.entities;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -9,13 +9,10 @@ import javax.persistence.EntityManagerFactory;
 
 import org.adligo.hibernate.db.EntityManagerFactoryBuilder;
 import org.adligo.hibernate.db.I_HibernateMappingProvider;
-import org.adligo.i.adig.client.GRegistry;
-import org.adligo.i.db.DbCheckedInvokerNames;
-import org.adligo.i.db.DbConnectionProvider;
-import org.adligo.i.db.impl.MockDbRegistry;
+import org.adligo.i.db_tests.impl.MockDbRegistry;
 import org.adligo.i.log.shared.Log;
 import org.adligo.i.log.shared.LogFactory;
-import org.adligo.models.params.client.Param;
+import org.adligo.models.params.shared.Param;
 import org.adligo.xml.parsers.template.Template;
 import org.adligo.xml.parsers.template.Templates;
 import org.adligo.xml.parsers.template.jdbc.JdbcEngineInput;
@@ -127,7 +124,7 @@ public class MockJpaDb {
 			Connection connection = readWriteDataSource.getConnection();
 			
 			Templates templates = new Templates();
-			templates.parseResource("/org/adligo/i/db/entities/CreateTestDb.xml");
+			templates.parseResource("/org/adligo/i/db_tests/entities/CreateTestDb.xml");
 			
 			
 			

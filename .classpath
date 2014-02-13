@@ -3,8 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/adi"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/adig"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_log"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_util"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jse_util"/>
@@ -28,5 +26,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4jpa"/>
 	<classpathentry kind="var" path="MVN_REPO/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/hibernate_db"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/i_adi"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/i_adig"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

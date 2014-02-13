@@ -1,4 +1,4 @@
-package org.adligo.i.db.impl;
+package org.adligo.i.db_tests.impl;
 
 public class MockDbCheckedInvokerNames {
 	public static final String CREATE_KEY_VALUE_IN_TRANSACTION = "CreateKeyValueInTransaction";

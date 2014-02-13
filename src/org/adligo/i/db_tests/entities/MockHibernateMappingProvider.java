@@ -1,4 +1,4 @@
-package org.adligo.i.db.entities;
+package org.adligo.i.db_tests.entities;
 
 import java.io.InputStream;
 
