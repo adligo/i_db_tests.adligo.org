@@ -12,24 +12,41 @@ import org.adligo.i.db_tests.entities.MockJpaDb;
 import org.adligo.i.log.shared.Log;
 import org.adligo.i.log.shared.LogFactory;
 import org.adligo.tests.ATest;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 /**
  * quick simple check to make sure JPA is setup
  * @author scott
  *
  */
+@RunWith(JUnit4.class)
 public class JpaSetupTests extends ATest {
 	private static final Log log = LogFactory.getLog(JpaSetupTests.class);
 	
-	public void setUp() throws Exception {
-		MockJpaDb.commonSetup();
-		MockJpaDb.createTestDb();
+	@Before
+	public  void setUpClass() {
+		try {
+			MockJpaDb.commonSetup();
+			MockJpaDb.createTestDb();
+		} catch (Exception x) {
+			log.error(x);
+		}
 	}
 	
-	public void tearDown() throws Exception {
-		MockJpaDb.commonTearDown();
+	@After
+	public  void tearDownClass()  {
+		try {
+			MockJpaDb.commonTearDown();
+		} catch (Exception x) {
+			log.error(x);
+		}
 	}
 	
+	@Test
 	public void testJpaHibernateSetup() throws Exception {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadWritePool());
 		

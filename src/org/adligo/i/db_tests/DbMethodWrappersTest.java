@@ -18,31 +18,52 @@ import org.adligo.i.db_tests.impl.SimpleQueryExceptionThrowerCheckedInvoker;
 import org.adligo.i.log.shared.Log;
 import org.adligo.i.log.shared.LogFactory;
 import org.adligo.tests.ATest;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
+@RunWith(JUnit4.class)
 public class DbMethodWrappersTest extends ATest {
 	private static final Log log = LogFactory.getLog(DbMethodWrappersTest.class);
 	private static I_GCheckedInvoker<SimpleKeyRequest, KeyValue> GET_KEY_VALUES = GRegistry.getCheckedInvoker(MockDbCheckedInvokerNames.GET_KEY_VALUE_BY_KEY, 
 			SimpleKeyRequest.class, KeyValue.class);
-	public void setUp() throws Exception {
-		MockJpaDb.commonSetup();
-		MockJpaDb.createTestDb();
+	
+	
+	@BeforeClass
+	public static void setUpClass() {
+		try {
+			MockJpaDb.commonSetup();
+			MockJpaDb.createTestDb();
+		} catch (Exception x) {
+			log.error(x);
+		}
 	}
 	
-	public void tearDown() throws Exception {
-		MockJpaDb.commonTearDown();
+	@AfterClass
+	public static void tearDownClass()  {
+		try {
+			MockJpaDb.commonTearDown();
+		} catch (Exception x) {
+			log.error(x);
+		}
 	}
 	
+	@Test
 	public void testSimpleWrappedQueryTest() throws Exception {
 		for (int i = 0; i < 1000; i++) {
 			assertQueryA();
 		}
 	}
 	
+	@Test
 	public void testMemoryLeaks() throws Exception {
 		//uncomment and attach net beans and filter for org.adligo.i.storage to look for leaks
 		//Thread.sleep(Integer.MAX_VALUE);
 	}
 
+	@Test
 	public void assertQueryA() throws SQLException, InvocationException {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadOnlyPool());
 		I_GCheckedInvoker<SimpleKeyRequest, KeyValue> invoker = GRegistry.getCheckedInvoker(MockDbCheckedInvokerNames.GET_KEY_VALUE_BY_KEY, 
@@ -56,6 +77,7 @@ public class DbMethodWrappersTest extends ATest {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadOnlyPool());
 	}
 
+	@Test
 	public void testSimpleWrappedQueryTestWithException() throws Exception {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadOnlyPool());
 		I_GCheckedInvoker<SimpleKeyRequest, KeyValue> invoker = GRegistry.getCheckedInvoker(
@@ -95,6 +117,7 @@ public class DbMethodWrappersTest extends ATest {
 	}
 	
 	
+	@Test
 	public void testCreateKeyValueTest() throws Exception {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadWritePool());
 		I_GCheckedInvoker<CreateKeyValueRequest, Boolean> invoker = GRegistry.getCheckedInvoker(
@@ -121,6 +144,7 @@ public class DbMethodWrappersTest extends ATest {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadOnlyPool());
 	}
 	
+	@Test
 	public void testFailToCreateKeyValueTest() throws Exception {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadWritePool());
 		I_GCheckedInvoker<CreateKeyValueRequest, Boolean> invoker = GRegistry.getCheckedInvoker(
@@ -148,6 +172,7 @@ public class DbMethodWrappersTest extends ATest {
 
 	}
 	
+	@Test
 	public void testBatchCreateKeyValueTest() throws Exception {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadWritePool());
 		I_GCheckedInvoker<BatchCreateKeyValuesRequest, Integer> invoker = GRegistry.getCheckedInvoker(
@@ -197,7 +222,7 @@ public class DbMethodWrappersTest extends ATest {
 		assertEquals(key + " value", keyValResult.getValue());
 	}
 	
-	
+	@Test
 	public void testFailBatchCreateKeyValueTest() throws Exception {
 		assertEquals(0, MockJpaDb.getConnectionsUsedFromReadWritePool());
 		I_GCheckedInvoker<BatchCreateKeyValuesRequest, Integer> invoker = GRegistry.getCheckedInvoker(

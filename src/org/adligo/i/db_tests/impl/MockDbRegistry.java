@@ -16,6 +16,7 @@ public class MockDbRegistry {
 		
 		DbConnectionProvider provider = DbConnectionProvider.create(emf, emfWrite, name);
 		
+		
 		GRegistry.addOrReplaceCheckedInvoker(DbCheckedInvokerNames.STORAGE_CONNECTION_PROVIDER, provider);
 		GRegistry.addOrReplaceCheckedInvoker(MockDbCheckedInvokerNames.GET_KEY_VALUE_BY_KEY, 
 				DbMethodWrappers.createConnectionWrapper(new SimpleQueryCheckedInvoker(), name));
