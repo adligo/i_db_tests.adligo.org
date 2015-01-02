@@ -7,8 +7,8 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/i_log.adligo.org"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_util.adligo.org"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/jse_util.adligo.org"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/tests"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/xmlt"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/tests.adligo.org"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt.adligo.org"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/params.adligo.org"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_db.adligo.org"/>
 	<classpathentry kind="var" path="MVN_REPO/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar"/>
@@ -24,7 +24,7 @@
 	<classpathentry kind="var" path="MVN_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar"/>
 	<classpathentry kind="var" path="MVN_REPO/org/apache/geronimo/specs/geronimo-ejb_3.1_spec/1.0/geronimo-ejb_3.1_spec-1.0.jar"/>
 	<classpathentry kind="var" path="MVN_REPO/org/apache/geronimo/specs/geronimo-jpa_2.0_spec/1.0/geronimo-jpa_2.0_spec-1.0.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4jpa"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/xmlt4jpa.adligo.org"/>
 	<classpathentry kind="var" path="MVN_REPO/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/hibernate_db"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/i_adi.adligo.org"/>
